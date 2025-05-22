@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         // Si no hay rutina guardada, puedes redirigir o pedir que la configure
         alert("Primero debes configurar tu rutina semanal.");
-        window.location.href = "configuracion.html"; // O donde configures la rutina
+        window.location.href = "inicio.html"; // O donde configures la rutina
     }
 });
 
