@@ -64,7 +64,7 @@ function submitForm(event) {
     const storedData = JSON.parse(localStorage.getItem("userData"));
     if (storedData && storedData.email === email) {
         alert("¡Registro completado con éxito!");
-        window.location.href = '/Cuenta/login.html'; // Cambiar a la página de login o la página que desees
+        window.location.href = 'login.html'; // Cambiar a la página de login o la página que desees
     } else {
         alert("Hubo un error al guardar tus datos. Por favor, intenta nuevamente.");
     }
