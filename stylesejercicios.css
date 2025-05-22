@@ -1,0 +1,106 @@
+/* Estilo global */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    background-color: #00000065;
+
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.514);
+    background-image: url('https://www.universal-assistance.com/uablog/wp-content/uploads/2020/06/ejercicio.png');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 30vh 20px;
+    gap: 5vh;
+    margin: auto;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    border: 2px solid #333;
+    border-radius: 12px;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #d5d5d5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Secciones de rutina */
+.routine {
+    display: none;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url(https://images.pexels.com/photos/791763/pexels-photo-791763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center/cover no-repeat;
+    border-radius: 12px;
+    padding: 25px;
+    color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.routine.show {
+    display: block;
+}
+
+.routine h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.routine p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.routine ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.routine ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

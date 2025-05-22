@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesos - MacroFIT</title>
+   <!--Icono de la pagina-->
+    <link rel="icon" href="macrofit.png" type="image/png">
+    <link rel="stylesheet" href="stylespeso.css"> <!-- Enlazar tu archivo de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='inicio.html';"><img src="MacroFITHD.png" alt="logo">
+            <h1>MacroFIT</h1>
+        </div>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Cuenta.html">Cuenta</a>
+        </nav>
+    </header>
+
+    <div class="converter-container">
+        <h2>Convertidor de Pesos</h2>
+        <form id="weightConverter">
+            <label for="weight">Ingresa tu peso:</label>
+            <input type="number" id="weight" name="weight" required>
+            
+            <label for="unit">Selecciona la unidad:</label>
+            <select id="unit" name="unit">
+                <option value="kg">Kilogramos</option>
+                <option value="lb">Libras</option>
+            </select>
+            
+            <button type="button" onclick="convertWeight()">Convertir</button>
+        </form>
+        <div id="result">
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>MacroFIT</h2>
+                <p>Transforma tu vida, un paso a la vez.</p>
+                <img src="MacroFITHD.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="landing.html">Plan Premium</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="aboutus.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="Terms.html">Términos y Condiciones</a></li>
+                    <li><a href="Politics.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-x"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-copy">
+            <p>MacroFIT — Mejora continua</p>
+        </div>
+    </footer>
+</body>
+
+<script src="pesoscript.js"></script>
+
+</html>

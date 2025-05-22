@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/218fc872735831.5bf1e45999c40.gif) no-repeat center/cover;
+    filter: brightness(0.25);
+    z-index: -1;
+}
+
+header {
+    background: #22222275 !important;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrappers .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+
+    margin-top: 1vh;
+
+    transition-duration: .2s;
+}
+
+.wrapper .btn:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition-duration: .2s;
+
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    scale: 1.5;
+    cursor: pointer;
+}
+
+/* === Media Queries Responsivas === */
+@media (max-width: 1024px) {
+  .cuenta-usuario {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .cuenta-container {
+    height: auto;
+  }
+
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cuenta-usuario {
+    padding: 15px;
+  }
+
+  .cuenta-container {
+    padding: 15px;
+  }
+
+  .info-perfil h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-perfil h1 {
+    font-size: 1.2rem;
+  }
+
+  .acciones h3 {
+    font-size: 1.3rem;
+  }
+
+  .acciones ul li a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cuenta-usuario {
+    top: 8vh;
+    height: calc(100% - 8vh);
+    padding: 10px;
+  }
+
+  .cuenta-container {
+    padding: 10px;
+  }
+
+  .foto-perfil {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .info-perfil h3 {
+    font-size: 1.3rem;
+  }
+
+  .info-perfil h1 {
+    font-size: 1rem;
+  }
+
+  .acciones h3 {
+    font-size: 1.2rem;
+  }
+
+  .acciones ul li a {
+    font-size: 0.9rem;
+  }
+}

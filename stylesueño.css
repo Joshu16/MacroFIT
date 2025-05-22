@@ -1,0 +1,79 @@
+.ciclo-sueño {
+    padding: 4rem 2rem;
+    background: url(https://www.herhappyheart.com/wp-content/uploads/2019/03/Night-routine-for-better-sleep-cozy-bed-1024x678.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #1a1a1a;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sueño-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.sueño-wrapper h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sueño-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.sueño-inputs label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sueño-inputs input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.sueño-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sueño-btn:hover {
+    background-color: lightgreen;
+}
+
+.resultado-sueño {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+#reiniciar{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}

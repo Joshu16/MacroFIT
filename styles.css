@@ -1,0 +1,612 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+.Inicio{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Inicio h1{
+    font-size: 160px;
+    transition-duration: .2s;
+}
+
+.Inicio h1:hover{
+    scale: 1.1;
+}
+
+.Inicio h2{
+    font-size: 40px;
+    font-weight: 1;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+.Inicio div{
+    display: flex;
+    margin-top: 10px;
+    justify-items: start;
+    gap: 3vh;
+    
+}
+
+.Inicio div button {
+    border: 2px solid white;
+    border-radius: 1vw;
+    width: 250px;
+    font-size: 30px;
+    background-color: beige;
+    color: black; ;
+    padding: 8px;
+    font-weight: 700;
+
+    transition-duration:.2s;
+    
+
+}
+
+.Inicio div button:hover {
+    cursor: pointer;
+    scale: 1.04;
+}
+
+
+
+.Inicio div #sec{
+    background-color: black;
+    color: white;
+
+
+}
+
+.Inicio img{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+
+    z-index: -1;
+
+    object-fit: cover;
+
+}
+
+.Pr{
+    display: flex;
+    justify-content: start;
+    font-size: 60px;
+
+    animation: move;
+    animation-duration: 3s;
+}
+
+#ProgressT{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9vh;
+    margin-bottom: 12vh;
+    margin-left: 6vw;
+    gap: 10px;
+}
+
+.progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-auto-rows: 150px;
+    padding: 40px;
+}
+
+.progress div{
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+
+    
+    transition-duration: .2s;
+}
+
+.progress div:hover{
+    cursor: pointer;
+    scale: 1.01;
+}
+
+
+.progress div:nth-child(1){
+    background-color: beige;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+    animation: move2 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+
+    
+ 
+}
+
+.progress h1{
+    font-size: 80px;
+    background-color: rgba(10, 7, 0, 0.11);
+    border-radius: 30%;
+}
+
+.progress h2{
+    font-size: 40px;
+}
+
+
+
+.progress div:nth-child(2){
+    background-color: #e5ddcf;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+    animation: move3 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
+.progress div:nth-child(3){
+    background-color:  #a6a19b;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+
+    animation: move3 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 25% ;
+}
+
+.Progreso {
+    display: flex;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 1vw;
+    width: 250px;
+    font-size: 30px;
+    background-color: beige;
+    color: black; ;
+    padding: 8px;
+    font-weight: 700;
+
+    margin: auto;
+
+    margin-bottom: 60px;
+
+    transition-duration:.2s;
+}
+
+.Progreso:hover {
+    cursor: pointer;
+    scale: 1.06;
+}
+
+.Servicios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#info {
+    text-align: center;
+}
+
+.Ser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 5vh;
+    margin-bottom: 30px;
+}
+
+.servicio-btn{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: white;
+
+
+    animation: move4 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.servicio-btn h3{
+    font-size: 20px;
+}
+
+.servicio-btn div {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    background: beige;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px beige;
+
+    transition-duration: .2s;
+
+
+}
+
+.servicio-btn div:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.servicio-btn h1{
+    font-size: 100px;
+    margin-block: 10px;
+}
+
+.servicio-btn h3{
+    font-weight: 100;
+    color: white;
+}
+
+
+
+
+@keyframes move {
+    from 
+
+        {
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+
+}
+
+@keyframes move2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes move3 {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes move4 {
+    from {
+        opacity: 0;
+        translate: 0 100px;
+        scale: .5;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+/* Base styles */
+html, body {
+    scroll-behavior: smooth;
+}
+
+.Inicio {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: darken;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Inicio img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .Inicio h1 {
+        font-size: 120px;
+    }
+    
+    .Inicio h2 {
+        font-size: 32px;
+    }
+    
+    .Servicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .Inicio {
+        height: 400px;
+    }
+    
+    .Inicio h1 {
+        font-size: 90px;
+        margin-bottom: 2vh;
+
+    }
+    
+    .Inicio h2 {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+    
+    .Inicio div button {
+        width: 200px;
+        font-size: 24px;
+    }
+    
+    .progress {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .progress div:nth-child(1),
+    .progress div:nth-child(4) {
+        grid-row: auto;
+    }
+    
+    .progress div:nth-child(2),
+    .progress div:nth-child(3) {
+        grid-column: auto;
+    }
+    
+    .Servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Inicio {
+        height: 350px;
+    }
+    
+    .Inicio h1 {
+        font-size: 70px;
+    }
+    
+    .Inicio h2 {
+        font-size: 24px;
+    }
+    
+    .Inicio div {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    .Inicio div button {
+        width: 180px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    .Pr {
+        font-size: 40px;
+    }
+    
+    #ProgressT {
+        margin-left: 3vw;
+        margin-bottom: 8vh;
+    }
+    
+    .progress {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .progress h1 {
+        font-size: 60px;
+        margin-bottom: 2vh;
+    }
+    
+    .progress h2 {
+        font-size: 30px;
+    }
+    
+    .Servicios {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .Ser {
+        font-size: 40px;
+    }
+    
+    .servicio-btn div {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .servicio-btn h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Inicio {
+        height: 300px;
+    }
+    
+    .Inicio h1 {
+        font-size: 50px;
+    }
+    
+    .Inicio h2 {
+        font-size: 20px;
+        margin-top: -15px;
+    }
+    
+    .Inicio div button {
+        width: 160px;
+        font-size: 18px;
+        padding: 6px;
+    }
+    
+    .Pr {
+        font-size: 30px;
+    }
+    
+    .progress {
+        row-gap: 15px;
+    }
+    
+    .progress div {
+        padding: 15px;
+    }
+    
+    .progress h1 {
+        font-size: 50px;
+    }
+    
+    .progress h2 {
+        font-size: 24px;
+    }
+    
+    .Servicios {
+        grid-template-columns: 1fr;
+    }
+    
+    .Ser {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .servicio-btn {
+        margin-bottom: 20px;
+    }
+    
+    .servicio-btn h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Inicio h1 {
+        font-size: 40px;
+    }
+    
+    .Inicio h2 {
+        font-size: 18px;
+    }
+    
+    .Inicio div button {
+        width: 140px;
+        font-size: 16px;
+    }
+    
+    .progress h1 {
+        font-size: 40px;
+    }
+    
+    .progress h2 {
+        font-size: 20px;
+    }
+    
+    .servicio-btn div {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .servicio-btn h1 {
+        font-size: 50px;
+    }
+}
+
+/* Animation adjustments for mobile */
+@media (max-width: 768px) {
+    @keyframes move3 {
+        from {
+            transform: translateX(200px);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    
+    .servicio-btn {
+        animation-range: entry 20% cover 30%;
+    }
+}
+
+/* Hover effect adjustments for touch devices */
+@media (hover: none) {
+    .Inicio h1:hover,
+    .Inicio div button:hover,
+    .progress div:hover,
+    .servicio-btn div:hover,
+    .Progreso:hover {
+        scale: 1;
+    }
+}
+

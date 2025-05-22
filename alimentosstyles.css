@@ -1,0 +1,177 @@
+body {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo oscuro con transparencia */
+    background: url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-blend-mode: darken; /* Mezcla la imagen de fondo con el color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+footer {
+    margin-top: 30vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin-top: 20vh;
+}
+
+.container h1 {
+    text-align: center;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Agregar margen inferior */
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e2e2e2;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.suggestions {
+    background: white;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.suggestion-item:hover {
+    background: #e2e2e2;
+}
+
+.add-button & #AddToDailyCalories {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el ratón */
+}
+
+.remove-button {
+    background-color: #dc3545; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.remove-button:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el ratón */
+}
+
+.food-item {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.button-container button {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el ratón */
+}
+
+.contenedor-boton {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.contenedor-boton button {
+    background-color: #218838;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contenedor-boton button:hover {
+    background-color: #1e7e34; /* Verde más oscuro al pasar el ratón */
+}
+
+@media only screen and (max-width: 992px) {
+
+    .container h1, .container h3{
+        font-size: 38px;
+    }
+
+    .container input,
+    .container button,
+    .container p{
+        font-size: 30px;
+    }
+
+    .button-container button{
+        font-size: 26px;
+    }
+
+
+}

@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: linear-gradient(#000000, #525151);
+    font-family: Arial;
+    width: 100vw;
+
+    overflow-x: hidden;
+}
+
+
+
+.Landing {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+.Landing div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+#tex1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    width: 16vw;
+    background-color: green;
+
+}
+
+#tex2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+.Landing img {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 120px;
+    border: 10px solid white;
+}
+
+.Landing div div {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    gap: 3vw;
+}
+
+.Option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    width: 15vw;
+    height: 12vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 120px;
+    border: 2px solid white;
+    background: black;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.Option:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.Titulo {
+    color: white;
+    text-align: center;
+
+    animation: move4 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.Titulo h2{
+    font-size: 2rem;
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+
+}
+
+.Titulo p {
+    margin-bottom: 4vh;
+    font-size: 1rem;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.dieta-categoria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 5vw;
+
+}
+
+.dieta-categoria div {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    height: 20vh;
+
+    text-align: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    animation: move4 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+
+
+}
+
+.dieta-categoria h3 {
+    color: black;
+}
+
+.dieta-categoria p {
+    color: black;
+}
+
+footer{
+    margin-top: 10vh;
+}
+
+@keyframes move4 {
+    from {
+        opacity: 0;
+        translate: 0 100px;
+        scale: .5;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+/* Media Queries for Landing Page */
+@media (max-width: 1200px) {
+    .Landing {
+        height: 60vh;
+    }
+    
+    #tex1, #tex2 {
+        font-size: 3.5rem;
+    }
+    
+    .Landing img {
+        width: 35vw;
+        height: 60vh;
+        border-radius: 100px;
+    }
+    
+    .Option {
+        width: 18vw;
+        height: 10vh;
+    }
+    
+    .dieta-categoria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Landing {
+        flex-direction: column;
+        height: auto;
+        margin: 20px;
+        align-items: center;
+    }
+    
+    .Landing div {
+        order: -1;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #tex1 {
+        width: auto;
+        background-color: transparent;
+    }
+    
+    #tex1, #tex2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .Landing img {
+        width: 60vw;
+        height: 40vh;
+        border-radius: 80px;
+        margin-bottom: 30px;
+    }
+    
+    .Landing div div {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .Option {
+        width: 25vw;
+        height: 8vh;
+        font-size: 0.9rem;
+    }
+    
+    .Titulo h2 {
+        margin-top: 10vh;
+        font-size: 1.8rem;
+    }
+    
+    .dieta-categoria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .Landing img {
+        width: 80vw;
+        height: 35vh;
+        border-radius: 60px;
+        border-width: 5px;
+    }
+    
+    #tex1, #tex2 {
+        font-size: 2.5rem;
+    }
+    
+    .Landing div div {
+        flex-wrap: wrap;
+    }
+    
+    .Option {
+        width: 35vw;
+        height: 7vh;
+        margin-bottom: 10px;
+    }
+    
+    .Titulo h2 {
+        font-size: 1.6rem;
+        margin-top: 8vh;
+    }
+    
+    .dieta-categoria {
+        grid-template-columns: 1fr;
+        margin: 0 10vw;
+    }
+    
+    .dieta-categoria div {
+        height: 15vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .Landing img {
+        width: 90vw;
+        height: 30vh;
+        border-radius: 40px;
+    }
+    
+    #tex1, #tex2 {
+        font-size: 2rem;
+    }
+    
+    .Option {
+        width: 45vw;
+        height: 6vh;
+        font-size: 0.8rem;
+        border-radius: 60px;
+    }
+    
+    .Titulo h2 {
+        font-size: 1.4rem;
+        margin-top: 6vh;
+    }
+    
+    .Titulo p {
+        font-size: 0.9rem;
+    }
+    
+    .dieta-categoria {
+        margin: 0 5vw;
+    }
+    
+    .dieta-categoria h3 {
+        font-size: 1.1rem;
+    }
+    
+    .dieta-categoria p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .Landing {
+        margin: 10px;
+    }
+    
+    .Landing img {
+        height: 25vh;
+        border-radius: 30px;
+        border-width: 3px;
+    }
+    
+    #tex1, #tex2 {
+        font-size: 1.8rem;
+    }
+    
+    .Option {
+        width: 80vw;
+        height: 6vh;
+        margin-bottom: 8px;
+    }
+    
+    .Landing div div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Titulo h2 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <link rel="stylesheet" href="global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta - MacroFIT</title>
+    <!--Icono de la pagina-->
+    <link rel="icon" href="macrofit.png" type="image/png">
+    <link rel="stylesheet" href="Cuenta.css"> <!-- Enlazar tu archivo de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div onclick="window.location.href='inicio.html';"><img src="MacroFITHD.png" alt="logo">
+            <h1>MacroFIT</h1>
+        </div>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Cuenta.html">Cuenta</a>
+        </nav>
+    </header>
+
+    <section class="cuenta-usuario">
+        <div class="container">
+            
+        </div>
+        <div class="cuenta-container">
+            <div class="perfil">
+                <div class="info-perfil">
+                    <h3>Nombre de usuario</h3>
+                    <h1 id="nombre-usuario">Nombre de Usuario</h1>
+                    <h3>Correo electrónico</h3>
+                    <h1 id="email-usuario">Email: usuario@example.com</h1>
+                    <h3>Tu peso corporal</h3>
+                    <h1 id="peso-usuario">Peso: 0 kg</h1>
+                    <h3>Tu altura</h3>
+                    <h1 id="altura-usuario">Altura: 0 m</h1>
+                    <h3>Tu frecuencia de entrenamiento</h3>
+                    <h1 id="frecuencia-usuario">Frecuencia de Entrenamiento: 0 días por semana</h1>
+                </div>
+            </div>
+            <div class="acciones">
+                <h3>Opciones de Cuenta</h3>
+                <ul>
+                    <li><a href="#" id="cambiar-nombre">Cambiar Nombre de Usuario</a></li>
+                    <li><a href="#" id="cambiar-email">Cambiar Email</a></li>
+                    <li><a href="#" id="cambiar-peso">Cambiar Peso</a></li>
+                    <li><a href="#" id="cambiar-altura">Cambiar Altura</a></li>
+                    <li><a href="#" id="cambiar-frecuencia">Cambiar Frecuencia de Entrenamiento</a></li>
+                    <li><a href="#" id="cerrar-sesion">Eliminar Cuenta</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Formularios para cambiar los datos -->
+        <div id="cambiar-nombre-form" style="display: none;">
+            <h3>Cambiar Nombre de Usuario</h3>
+            <input type="text" id="nuevo-nombre" placeholder="Nuevo Nombre de Usuario">
+            <button id="guardar-nombre">Guardar</button>
+            <button type="button" id="cancelar-nombre">Cancelar</button>
+        </div>
+
+        <div id="cambiar-email-form" style="display: none;">
+            <h3>Cambiar Email</h3>
+            <input type="email" id="nuevo-email" placeholder="Nuevo Email">
+            <button id="guardar-email">Guardar</button>
+            <button type="button" id="cancelar-email">Cancelar</button>
+        </div>
+
+        <div id="cambiar-peso-form" style="display: none;">
+            <h3>Cambiar Peso</h3>
+            <input type="number" id="nuevo-peso" placeholder="Nuevo Peso en kg" min="0">
+            <button id="guardar-peso">Guardar</button>
+            <button type="button" id="cancelar-peso">Cancelar</button>
+        </div>
+
+        <div id="cambiar-altura-form" style="display: none;">
+            <h3>Cambiar Altura</h3>
+            <input type="number" id="nueva-altura" placeholder="Nueva Altura en metros" step="0.01" min="0">
+            <button id="guardar-altura">Guardar</button>
+            <button type="button" id="cancelar-altura">Cancelar</button>
+        </div>
+
+        <div id="cambiar-frecuencia-form" style="display: none;">
+            <h3>Cambiar Frecuencia de Entrenamiento</h3>
+            <select id="nueva-frecuencia">
+                <option value="3">3 días por semana</option>
+                <option value="4">4 días por semana</option>
+                <option value="5">5 días por semana</option>
+                <option value="6">6 días por semana</option>
+                <option value="7">7 días por semana</option>
+            </select>
+            <button id="guardar-frecuencia">Guardar</button>
+            <button type="button" id="cancelar-frecuencia">Cancelar</button>
+        </div>
+    </section>
+
+    <script src="scriptcuenta.js"></script>
+</body>
+</html>

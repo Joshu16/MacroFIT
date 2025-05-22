@@ -1,0 +1,75 @@
+body{
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/d93f9c65397547.5af2fc5f3a71e.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.converter-container {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-block: 180px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #000000a2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.converter-container h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resultText {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+
+}

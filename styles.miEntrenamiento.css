@@ -1,0 +1,251 @@
+#image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+main {
+    width: 100vw;
+    padding: 5vw;
+
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+}
+
+#workout-form {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2vh;
+
+    justify-content: center;
+}
+
+#workout-form input {
+    border-radius: 10px;
+    height: 5vh;
+    text-align: center;
+    border: 3px solid gray;
+    margin-right: 10px;
+}
+
+#add-exercise {
+    margin-right: 10px;
+}
+
+#workout-form button {
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #222;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#workout-form button:hover {
+    background-color: #444;
+}
+
+#exercises-list {
+    margin-bottom: 10vh;
+}
+
+#exercises-list select {
+    margin-top: 1vh;
+    border-radius: 10px;
+    height: 4vh;
+    background-color: #222;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#exercises-list button {
+    margin-top: 1vh;
+
+    border-radius: 10px;
+    height: 4vh;
+    background-color: #222;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-inline: 10px;
+}
+
+#exercises-list option{
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #222;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.workout-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #222;
+    border-radius: 50px;
+    padding-block: 2vh;
+}
+
+.workout-item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.series-container input {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 3vh;
+    background-color: #222;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:nth-child(6), #delete-button {
+    border-radius: 10px;
+    height: 5vh;
+    background-color: #363636;
+    padding: 10px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 2vh;
+}
+
+/* Media Queries para responsive design */
+
+@media (max-width: 1200px) {
+    #workout-form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    #workout-form {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    
+    #workout-form input,
+    #workout-form button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    #add-exercise {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 3vw;
+    }
+    
+    #workout-form {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #workout-form input {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #workout-form button {
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .workout-item {
+        padding-block: 3vh;
+        border-radius: 30px;
+    }
+    
+    #exercises-list select,
+    #exercises-list button {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #image {
+        height: 200px;
+    }
+    
+    #workout-form {
+        width: 100%;
+    }
+    
+    #workout-form input,
+    #workout-form button {
+        height: 6vh;
+    }
+    
+    .workout-item {
+        border-radius: 20px;
+        padding: 2vh 1vh;
+    }
+    
+    button:nth-child(6), 
+    #delete-button {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .series-container input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #image {
+        height: 150px;
+    }
+    
+    #workout-form input,
+    #workout-form button {
+        height: 7vh;
+        font-size: 14px;
+    }
+    
+    #exercises-list select,
+    #exercises-list button {
+        font-size: 14px;
+        height: 5vh;
+    }
+    
+    .workout-item {
+        margin: 1vh 0;
+        padding: 1.5vh 0.5vh;
+    }
+}

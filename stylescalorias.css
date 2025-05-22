@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo oscuro con transparencia */
+    background: url(https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-blend-mode: darken; /* Mezcla la imagen de fondo con el color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    font-family: Arial;
+    width: 100vw;
+    height: 120vh;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.calculadora {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.calculadora h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calculadora form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculadora label {
+    font-weight: bold;
+}
+
+.calculadora select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.calculadora input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.calculadora button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+}

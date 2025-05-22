@@ -1,0 +1,176 @@
+body {
+    background: linear-gradient(#222, #333) !important;
+    margin: 0; /* Asegúrate de que no haya margen en el body */
+}
+
+.premium {
+    height: 70vh;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;;
+    align-items: start;
+    position: relative;
+
+    margin-top: 30vh;
+    margin-bottom: -20vh;
+
+}
+
+.premium-container {
+    margin-left: 10vw;
+    transition-duration: .2s;
+
+    animation: move;
+    animation-duration: 3s;
+}
+
+.premium-container:hover{
+    margin-bottom: 10px;
+    margin-left: 13vw;
+    scale: 1.1;
+
+}
+
+.premium button {
+    background-color: #333;
+    justify-self: center;
+    align-self: flex-start;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 20vw;
+    height: 10vh;
+    margin-left: 10vw;
+    margin-top: 2vh;
+    border-radius: 20px;
+    font-size: 2.4vh;
+    font-weight: 600;
+    transition: 0.3s ease;
+
+    animation: move;
+    animation-duration: 3s;
+}
+
+.premium button:hover {
+    background-color: rgb(214, 214, 198);
+    color: #222;
+    width: 40vw;
+    scale: 1.1;
+    margin-left: 12vw;
+}
+
+.premium-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#color {
+    color: beige;
+}
+
+.pricing {
+    margin-top: 20px;
+    font-size: 1.5rem;
+
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    color: rgb(214, 214, 198);
+    margin-bottom: 20px;
+     margin-left: 10vw;
+
+     animation: move;
+    animation-duration: 3s;
+}
+
+/* Estilos de la Sección de Beneficios */
+.benefits {
+    background-color: #222;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    margin-bottom: 30px;
+
+    animation: move4 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.benefit-item h3 {
+    font-size: 1.8rem;
+    color: #f5a623;
+}
+
+.benefit-item p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+@keyframes move {
+    from 
+
+        {
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+
+}
+
+@keyframes move4 {
+    from {
+        opacity: 0;
+        translate: 0 100px;
+        scale: .5;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .premium {
+        font-size: 3vw;
+        height: 80vh;
+    }
+
+
+    #icon {
+        width: 70vw;
+        height: 70vw;
+        left: 50vw;
+        top: 30vh; 
+    }
+
+    .premium button {
+        font-size: 2vh;
+        width: 50vw;
+    }
+
+    #color {
+        color: #F2F2F2;
+    }
+}

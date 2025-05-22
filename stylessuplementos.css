@@ -1,0 +1,382 @@
+.Suplements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95lEPfBS57LK3obM9rq_OwI0K_Y_pjART-Q&s);
+    background-color: rgba(0, 0, 0, 0.74);
+    background-blend-mode: darken;
+}
+
+.Suplements button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background: none;
+    border: none;
+    animation: move4 linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.Suplements button h3 {
+    font-size: 40px;
+    color: white;
+}
+
+.Suplements div {
+    display: grid;
+    flex-direction: row;
+    width: 300px;
+    height: 300px;
+    background: beige;
+    color: white;
+    margin-bottom: 30px;
+    border-radius: 60px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px beige;
+    transition-duration: .2s;
+}
+
+.Suplements button div:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.Suplements button div img {
+    width: 180px;
+    height: 180px;
+}
+
+.imgheader {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(40%);
+
+}
+
+.titles{
+    position: absolute;
+    margin-top: 10vh;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.titles h1{
+    font-size: 100px;
+}
+
+.titles h3{
+    font-size: 40px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details h2 {
+    width: 100vw;
+    font-size: 48px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding-block: 50px;
+
+}
+
+.details h3 {
+    font-size: 28px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    width: 400px;
+
+
+    margin-bottom: 10px;
+    margin-left: 50px;
+
+
+    padding: 30px;
+    border-radius: 20px;
+
+
+}
+
+.details p {
+    margin-left: 60px;
+    width: 80%;
+    font-size: 20px;
+
+}
+
+#one {
+    background-color: white;
+    color: black;
+
+    padding-block: 5vh;
+}
+
+#two {
+    background-color: rgb(83, 83, 83);
+    color: white;
+
+    padding-block: 5vh;
+}
+
+#three {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    padding-block: 5vh;
+
+}
+
+#four{
+    background-color: rgb(83, 83, 83);
+    color: white;
+
+    padding-block: 5vh;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+
+    margin-block: 5vh;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+
+    background-color: beige;
+
+    width: 20vw;
+    height: 20vw;
+
+    border-radius: 20%;
+
+    transition-duration: .2s;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.producto:hover{
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.producto img {
+    width: 14vw;
+    height: 14vw;
+
+    border-radius: 20%;
+}
+
+.producto h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Media Queries for Suplements Section */
+@media (max-width: 1200px) {
+    .Suplements {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .Suplements div {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .Suplements button div img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .titles h1 {
+        font-size: 80px;
+    }
+    
+    .titles h3 {
+        font-size: 30px;
+    }
+    
+    .producto {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .Suplements {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .titles h1 {
+        font-size: 70px;
+    }
+    
+    .titles {
+        margin-top: 8vh;
+    }
+    
+    .details h2 {
+        font-size: 40px;
+        padding-block: 40px;
+    }
+    
+    .details h3 {
+        font-size: 24px;
+        width: 350px;
+        margin-left: 30px;
+        padding: 20px;
+    }
+    
+    .details p {
+        margin-left: 40px;
+        font-size: 18px;
+    }
+    
+    .productos {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    .producto {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .producto img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .Suplements {
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .Suplements div {
+        width: 70vw;
+        height: 70vw;
+        margin: 0 auto 30px;
+    }
+    
+    .Suplements button div img {
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    .Suplements button h3 {
+        font-size: 30px;
+    }
+    
+    .imgheader {
+        height: 30vh;
+    }
+    
+    .titles h1 {
+        font-size: 50px;
+    }
+    
+    .titles h3 {
+        font-size: 24px;
+    }
+    
+    .titles {
+        margin-top: 5vh;
+    }
+    
+    .details h2 {
+        font-size: 32px;
+        padding-block: 30px;
+    }
+    
+    .details h3 {
+        width: 80%;
+        margin-left: 0;
+        margin: 0 auto 10px;
+    }
+    
+    .details p {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 16px;
+    }
+    
+    .producto {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .producto img {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .producto h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .Suplements div {
+        width: 80vw;
+        height: 80vw;
+        border-radius: 40px;
+    }
+    
+    .Suplements button div img {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .Suplements button h3 {
+        font-size: 24px;
+    }
+    
+    .imgheader {
+        height: 25vh;
+    }
+    
+    .titles h1 {
+        font-size: 40px;
+    }
+    
+    .titles h3 {
+        font-size: 20px;
+    }
+    
+    .details h2 {
+        font-size: 28px;
+    }
+    
+    .details h3 {
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .producto h2 {
+        font-size: 24px;
+    }
+}

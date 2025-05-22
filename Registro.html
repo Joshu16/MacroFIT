@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - MacroFIT</title>
+    <!--Icono de la pagina-->
+    <link rel="icon" href="macrofit.png" type="image/png">
+    <link rel="stylesheet" href="stylesRegistro1.css"> <!-- Enlazar tu archivo de estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <main class="registro">
+        <div class="wrappers">
+            <form id="registro-form">
+                <!-- Pantalla 1: Nombre de usuario -->
+                <div id="screen1" class="screen">
+                    <h1>¡Conozcámonos primero!</h1>
+                    <div class="input-box">
+                        <input type="text" name="nombre" id="nombre" placeholder="¿Cuál es tu nombre?" required>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="nextScreen(2)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 2: Usuario -->
+                <div id="screen2" class="screen" style="display: none;">
+                    <h1>¡Genial!</h1>
+                    <div class="input-box">
+                        <input type="text" name="usuario" id="usuario" placeholder="¿Cuál es tu usuario?" required>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(1)">Anterior</button>
+                    <button class="flowBtn" type="button" onclick="nextScreen(3)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 3: Correo y Contraseña -->
+                <div id="screen3" class="screen" style="display: none;">
+                    <h1>¡Casi listo!</h1>
+                    <div class="input-box">
+                        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirmar Contraseña" required>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(2)">Anterior</button>
+                    <button class="flowBtn" type="button" onclick="nextScreen(4)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 4: Altura -->
+                <div id="screen4" class="screen" style="display: none;">
+                    <h1>Mediciones</h1>
+                    <div class="input-box">
+                        <input type="number" name="altura" id="altura" placeholder="¿Cuánto mides?" required>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(3)">Anterior</button>
+                    <button class="flowBtn" type="button" onclick="nextScreen(5)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 5: Peso -->
+                <div id="screen5" class="screen" style="display: none;">
+                    <h1>¡Casi Terminamos!</h1>
+                    <div class="input-box">
+                        <input type="number" name="peso" id="peso" placeholder="¿Cuánto pesas?" required>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(4)">Anterior</button>
+                    <button class="flowBtn" type="button" onclick="nextScreen(6)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 6: Género -->
+                <div id="screen6" class="screen" style="display: none;">
+                    <h1>Datos Finales</h1>
+                    <div class="input-box">
+                        <label for="genero">¿Qué género eres?</label>
+                        <select name="genero" id="genero" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(5)">Anterior</button>
+                    <button class="flowBtn" type="button" onclick="nextScreen(7)">Siguiente</button>
+                </div>
+
+                <!-- Pantalla 7: Frecuencia de Ejercicio -->
+                <div id="screen7" class="screen" style="display: none;">
+                    <h1>¿Con qué frecuencia haces ejercicio?</h1>
+                    <div class="input-box">
+                        <select name="frecuencia" id="frecuencia" required>
+                            <option value="nunca">Nunca</option>
+                            <option value="1-2">1-2 veces por semana</option>
+                            <option value="3-4">3-4 veces por semana</option>
+                            <option value="5-6">5-6 veces por semana</option>
+                            <option value="diario">Diariamente</option>
+                        </select>
+                    </div>
+                    <button class="flowBtn" type="button" onclick="previousScreen(6)">Anterior</button>
+                    <button type="submit" class="btn">Finalizar Registro</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="scriptregistro1.js"></script>
+</body>
+</html>
