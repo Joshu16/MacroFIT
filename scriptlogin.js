@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (emailInput === storedUser.email && passwordInput === storedUser.password) {
             alert("¡Inicio de sesión exitoso!");
             // Redirigir al usuario a la página principal de su cuenta
-            window.location.href = "/Inicio/inicio.html";
+            window.location.href = "/inicio.html";
         } else {
             alert("Correo o contraseña incorrectos.");
         }
